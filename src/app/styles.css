@@ -1,0 +1,14 @@
+.banner {
+    background:
+        no-repeat url('../../public/background.png');
+    background-size: cover;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.custom-img {
+    
+    background-image: url("https://images.unsplash.com/photo-1524337676612-18e579b62f4a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
+}
