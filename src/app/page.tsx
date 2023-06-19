@@ -13,7 +13,7 @@ export default function Home() {
             <Banner />
           </div>
         </header>
-        <section className="max-w-lg m-auto">
+        <section className="m-auto">
           <Projects/>
         </section>
         <section

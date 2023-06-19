@@ -1,0 +1,49 @@
+$primary: #ffffff;
+$secondary: #1A74E2;
+
+.borders {
+    border: 5px solid #1A74E2;
+    display: inline-block;
+    margin: 25px auto;
+    padding: 25px;
+    position: relative;
+    width: auto;
+}
+
+.iconContainer {
+    background-color: #262626;
+}
+
+.icons {
+    font-size: 30px;
+    color: #1A74E2;
+}
+
+.iconContainer:hover {
+    text-shadow: 0 0 5px $primary;
+    box-shadow: 0 0 5px $primary;
+
+    & .icons {
+        color: $primary;
+    }
+}
+
+.language{
+    background-color: $secondary;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+@keyframes floating {
+    0% {
+        transform: translate(0, 0px);
+    }
+
+    50% {
+        transform: translate(0, 15px);
+    }
+
+    100% {
+        transform: translate(0, -0px);
+    }
+}

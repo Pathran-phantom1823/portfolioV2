@@ -6,7 +6,10 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import ContactMailIcon from '@mui/icons-material/ContactMail';
 import { createTheme } from '@mui/material';
 import { ThemeProvider } from '@emotion/react';
-import './styles.css'
+import './styles.scss'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope, faUser } from '@fortawesome/free-regular-svg-icons';
+import { faFacebook, faGithubAlt, faSkype } from '@fortawesome/free-brands-svg-icons';
 const theme = createTheme({
     palette: {
         primary: {
@@ -21,13 +24,16 @@ const iconSize = 'large';
 
 const socials = [
     {
-        icon: <FacebookRoundedIcon color='primary' fontSize={iconSize} />
+        icon: faSkype
     },
     {
-        icon: <LinkedInIcon color='primary' fontSize={iconSize} />
+        icon: faFacebook
     },
     {
-        icon: <ContactMailIcon color='primary' fontSize={iconSize} />
+        icon: faEnvelope
+    },
+    {
+        icon: faGithubAlt
     }
 ]
 
@@ -54,8 +60,9 @@ function Banner() {
                         <div className='flex flex-row gap-5 cursor-pointer'>
                             {
                                 socials.map(element => (
-                                    <div className='icons'>
-                                        {element.icon}
+                                    <div className='iconContainer p-3 rounded-full'>
+                                        {/* {element.icon} */}
+                                        <FontAwesomeIcon icon={element.icon} className='icons'/>
                                     </div>
                                 ))
                             }
